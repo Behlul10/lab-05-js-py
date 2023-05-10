@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>increase Max</title>
+</head>
+<body>
+    <script>
+        // this demonstrates a loop running within another loop (nesting!)
+        for (var x = 0; x <= 7; x++) {
+            // our first loop iterates each step 0 to 7
+            // we define our incriment here as x, so we dont confuse it with i (below)
+            for (var i = 0; i <= x; i++) {
+                // our 2nd inner loop (nested) uses i as an incriment 
+                // here we use x to control the number of iterations of i 
+                // at each incriment of x, we run a new loop the size of x within the 1st loop
+                console.log(i);
+            }
+        }
+    </script>
+
+</body>
+</html>
