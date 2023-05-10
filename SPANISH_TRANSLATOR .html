@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Animal Translation</title>
+  </head>
+  <body>
+    <label for="animal">Enter an animal(horse,dog or cat):</label>
+    <input type="text" id="animal">
+    <button onclick="translateAnimal()">Translate</button>
+    <p id="translation"></p>
+
+    <script>
+      function translateAnimal() {
+        const input = document.getElementById('animal').value.toLowerCase();
+        let translation;
+        if (input === 'chicken') 
+        {
+          translation = 'Pollo';
+        } else if (input === 'wolf') 
+        {
+          translation = 'lobo';
+        } else if (input === 'bird') 
+        {
+          translation = 'pájaro';
+        } else 
+    } else if (input === 'lion') 
+        {
+          translation = 'león';
+        } else 
+        {
+          translation = 'Sorry, I do not know the translation for that animal.';
+        }
+
+        document.getElementById('translation').textContent = translation;
+      }
+    </script>
+  </body>
+</html>
